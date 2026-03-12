@@ -4,7 +4,7 @@ import AppNavigationBar from '../../components/AppNavigationBar/AppNavigationBar
 import BottomNavBar from '../../components/BottomNavBar/BottomNavBar';
 import MidContent from '../../components/MidContent/MidContent';
 
-import { useState } from "react";
+import { useState, useRef } from "react";
 
 const HomePage = () => {
   const barListValue = [
@@ -16,9 +16,14 @@ const HomePage = () => {
   const [componentName, setComponentName] = useState('首页');
   const [currentComponentItem, setCurrentComponentItem] = useState(barListValue[0]);
 
+  const midContentRef = useRef();
+
   const bottomBarClickCallback = (item, index) => {
     setComponentName(item.name);
     setCurrentComponentItem(item);
+
+    // // 也可以使用ref调用子组件方法（超级难用🤮）
+    // midContentRef.current.setComponentItemValue(item);
   }
   return (
     <>
@@ -29,6 +34,7 @@ const HomePage = () => {
         ></AppNavigationBar>
 
         <MidContent
+          ref={midContentRef}
           componentName={componentName}
           currentComponentItem={currentComponentItem}></MidContent>
 
