@@ -1,0 +1,7 @@
+.mid-content {
+  display: grid;
+  grid-template-rows: auto auto;
+  align-items: center;
+  justify-items: center;
+  color: white;
+}

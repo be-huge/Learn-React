@@ -1,0 +1,14 @@
+.bottom-nav-container {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  justify-items: center;
+}
+
+.bar-item {
+  height: 100%;
+}
+
+.bar-item, .actived {
+  color: var(--BBItemActiveColor);
+}

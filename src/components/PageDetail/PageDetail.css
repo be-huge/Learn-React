@@ -1,0 +1,7 @@
+.detail-container {
+  display: grid;
+  grid-template-rows: auto 1fr;
+  text-align: center;
+  height: 100%;
+  background-color: #282c34;
+}
