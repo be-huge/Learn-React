@@ -3,7 +3,7 @@
 
 ## 使用感受
 ``` javascript
-说实话，并不怎么好用。举个例子，vue的动态class、v-shoue、v-if等等指令都比它好用。
+说实话，并不怎么好用。举个例子，vue的动态class、v-show、v-if等等指令都比它好用。
 
 以及ref的暴露，响应式的数据定义等等。
 
